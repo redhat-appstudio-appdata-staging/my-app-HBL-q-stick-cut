@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-sol7
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/somahesh-tenant/my-app/devfile-sample-python-basic-sol7@sha256:526f69bd91d3edabf862c0a45172cc251bcb904aa263f12e869a29931337d677
+        name: my-python
+        resources: {}
+status: {}
